@@ -11,7 +11,7 @@ test("each <a> element has a unique key prop", () => {
 
   errorSpy.mockRestore();
 });
-
+ 
 test("renders three <a> elements", () => {
   const { container } = render(<NavBar />);
   expect(container.querySelectorAll("a")).toHaveLength(3);
